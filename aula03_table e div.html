@@ -1,0 +1,81 @@
+<!-- Aula 03 - 17/08/2023 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Elementos Tabela e Div</title>
+</head>
+
+<body>
+  <h1>Elementos TABLE e DIV</h1>
+  <p>
+    Vamos aprender como trabalhar com DIVs e tabelas na linguagem HTML 5 e CSS
+    inline
+  </p>
+  <h2>TABLE</h2>
+  <p>
+    Tabela da maneira antiga. Não possui separação entre conteúdo e cabeçalho, apenas linhas e celular.
+  </p>
+  <p>
+    Lembre-se de nunca usar tabelas para organizar layouts de páginas. Antigamente, usuávamos, Hoje, não.
+    Tabelas servem apenas para MOSTRAR DADOS TABULADOS (como se fosse uma planilha)
+  </p>
+  <!--Tabela Antiga-->
+  <table border="10" cellpadding="10" cellspacing="10">
+    <tr> <!--Table row-->
+      <td>RA</td> <!--Table division-->
+      <td>Nome</td>
+    </tr>
+    <tr>
+      <td>123456</td>
+      <td>José Neto</td>
+    </tr>
+    <tr>
+      <td>789456</td>
+      <td>Raquel Oliveira</td>
+    </tr>
+  </table>
+  <p>Tabelas modernas para apresentar dados usam thead e tbody</p>
+
+  <!--Tabela moderna-->
+  <table border="10" cellpadding="10" cellspacing="10">
+    <!-- Cabeçalho da tabela -->
+    <thead>
+      <!-- Linha do cabeçalho -->
+      <tr>
+        <th>RA:</th>
+        <th>Nome:</th>
+      </tr>
+    </thead>
+    <!-- Corpo da tabela -->
+    <tbody>
+      <tr>
+        <td>1234</td>
+        <td>José Neto</td>
+      </tr>
+      <tr>
+        <td>5678</td>
+        <td>Raquel Oliveira</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>DIVs</h2>
+  <p>A tag DIV como o próprio nome diz, é divisão (espacial). Usamos DIVs para organizar espacialmente elementos na
+    página. Atualmente não usamos tanto DIV para criar "seções" como rodapé, conteúdo e cabeçalho (hoje usamos a tag
+    section). No entanto é perfeitamente possível fazer só com DIVs.</p>
+  <div style="border:5px solid navy;">
+    <p>DIV mãe</p>
+    <div style="border:5px dotted red;">
+      <p>DIV filha</p>
+    </div>
+  </div>
+  <p>Tamanhos relativos e comportaentos:</p>
+  <div style="border:5px solid navy; width:50%;">
+    <p>DIV mãe</p>
+    <div style="border:5px dotted red;">
+      <p>DIV filha</p>
+    </div>
+  </div>
+</body>
+
+</html>

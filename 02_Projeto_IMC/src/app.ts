@@ -34,7 +34,7 @@ app.post("/calcularIMC", (req, res)=>{
 
     // Validadando se altura e peso chegaram
 if (peso !== undefined && altura !== undefined){
-    if (peso>=0 && altura>=0){
+    if (peso>0 && altura>0){
         imc = peso/Math.pow(altura,2);
         status = "SUCCESS";
     }else if (peso<=0 && altura<=0){

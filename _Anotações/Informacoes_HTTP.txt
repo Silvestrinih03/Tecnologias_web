@@ -1,0 +1,27 @@
+HTTP
+
+Verbos de requisição
+    POST >> Atribuir informações
+    GET >> Obter informações (geralmente não tem entrada)
+    PUT >> Inserir algo novo (algo que não existia)
+    DELETE >> Excluir algo
+
+
+Comands Node.JS
+    node --version
+    npm init -y
+    npm install express
+    npm  install typescript @types/node @types/express --save-dev
+    npx tsc -init
+
+REQUEST
+    Header >> Dados sensíveis
+    Body >> Dados não sensíveis
+    Exemplo (compra de passagens aéreas)
+        Header >> Dados de cartão, dados pessoais (CPF)
+        Body >> Avião, destino, assento
+
+JSON
+    {   "nome": "Nicole",
+        "idade": "19"
+    }
